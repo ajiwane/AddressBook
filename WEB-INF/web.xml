@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+    version="2.4">
+
+    <display-name>Servlet 2.4 Examples</display-name>
+    <description>
+      Servlet 2.4 Examples.
+    </description>
+
+   
+    <!-- Define servlets that are included in the example application -->
+
+    
+    <servlet>
+        <servlet-name>Authenticate</servlet-name>
+        <servlet-class>Authenticate</servlet-class>
+    </servlet>
+<servlet>
+        <servlet-name>CompleteRegistration</servlet-name>
+        <servlet-class>CompleteRegistration</servlet-class>
+    </servlet>
+<servlet>
+        <servlet-name>AddEntry</servlet-name>
+        <servlet-class>AddEntry</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ReturnList</servlet-name>
+        <servlet-class>ReturnList</servlet-class>
+    </servlet>
+
+<servlet>
+        <servlet-name>Modify</servlet-name>
+        <servlet-class>Modify</servlet-class>
+    </servlet>
+
+<servlet>
+        <servlet-name>LoggingOut</servlet-name>
+        <servlet-class>LoggingOut</servlet-class>
+    </servlet>
+
+       <servlet-mapping>
+        <servlet-name>Authenticate</servlet-name>
+        <url-pattern>/Authenticate</url-pattern>
+    </servlet-mapping>
+       <servlet-mapping>
+        <servlet-name>ReturnList</servlet-name>
+        <url-pattern>/ReturnList</url-pattern>
+    </servlet-mapping>
+       <servlet-mapping>
+        <servlet-name>LoggingOut</servlet-name>
+        <url-pattern>/LoggingOut</url-pattern>
+    </servlet-mapping>
+
+       <servlet-mapping>
+        <servlet-name>CompleteRegistration</servlet-name>
+        <url-pattern>/CompleteRegistration</url-pattern>
+    </servlet-mapping>
+       <servlet-mapping>
+        <servlet-name>AddEntry</servlet-name>
+        <url-pattern>/AddEntry</url-pattern>
+    </servlet-mapping>
+
+       <servlet-mapping>
+        <servlet-name>Modify</servlet-name>
+        <url-pattern>/Modify</url-pattern>
+    </servlet-mapping>
+
+<error-page>
+<exception-type> java.lang.Exception </exception-type>
+<location>/Error.jsp</location>
+</error-page>
+
+</web-app>
